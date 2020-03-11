@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>The amazing calculator</title>
+        <title>CalcApp</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
     </head>
     <body>
         <div class="calculatorContainer">
-            <div class="calculatorTitle">
-                THE AMAZING CALCULATOR
-            </div>
             <div class="display">
                 <input class="inputNumber" type="text" disabled/>
             </div>
-            <div class="operators">
-                <span class="leftContainer">
-                    <span class="resetButton">
-                        RESET
+            <div class="buttons">
+                <div class="top">
+                    <span id="AC">
+                        AC
                     </span>
-                    <span class="equalButton">
+                    <span id="C">
+                        C
+                    </span>
+                    <span id="plusMinus">
+                        +/-
+                    </span>
+                    <span class="operator" id="divisionButton">
+                        ÷
+                    </span>
+                </div>
+                <div>
+                    <span id="seven">
+                        7
+                    </span>
+                    <span id="eight">
+                        8
+                    </span>
+                    <span id="nine">
+                        9
+                    </span>
+                    <span class="operator" id="multiplicationButton">
+                        ×
+                    </span>
+                </div>
+                <div>
+                    <span id="four">
+                        4
+                    </span>
+                    <span id="five">
+                        5
+                    </span>
+                    <span id="six">
+                        6
+                    </span>
+                    <span class="operator" id="substractButton">
+                        -
+                    </span>
+                </div>
+                <div>
+                    <span id="one">
+                        1
+                    </span>
+                    <span id="two">
+                        2
+                    </span>
+                    <span id="three">
+                        3
+                    </span>
+                    <span class="operator" id="addButton">
+                        +
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span id="zero">
+                        0
+                    </span>
+                    <span id="dec">
+                        .
+                    </span>
+                    <span class="operator" id="equalButton">
                         =
                     </span>
-                </span>
-                <span class="rightContainer">
-                    <span class="upperOperators">
-                        <span id="addButton">
-                            +
-                        </span>
-                        <span id="substractButton">
-                            -
-                        </span>
-                    </span>
-                    <span class="lowerOperators">
-                        <span id="multiplicationButton">
-                            *
-                        </span>
-                        <span id="divisionButton">
-                            /
-                        </span>         
-                    </span>
-                </span>
-            </div>
-            <div class="operationLog">
-                <div class="results">
-                    <label class="labelClass">
-                        RESULT = 
-                    </label>
-                    <input id="resultValue" type="text" disabled/>
-                </div>
-                <div class="logDisplay">
-                    <textarea id="logInformation" disabled></textarea>
                 </div>
             </div>
         </div>

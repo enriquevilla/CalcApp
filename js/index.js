@@ -15,13 +15,13 @@ function handleOpClick(event) {
     document.getElementsByClassName("inputNumber")[0].value = "";
 }
 
-document.getElementsByClassName("resetButton")[0].addEventListener("click", (event) => {
+document.getElementById("C").addEventListener("click", (event) => {
     event.preventDefault();
     document.getElementsByClassName("inputNumber")[0].value = "";
     document.getElementById("resultValue").value = "";
 });
 
-document.getElementsByClassName("equalButton")[0].addEventListener("click", (event) => {
+document.getElementById("equalButton").addEventListener("click", (event) => {
     event.preventDefault();
     //regex to check valid numbers
     if (/[0-9]*[.]?[0-9]+/.test(Number(document.getElementsByClassName("inputNumber")[0].value))

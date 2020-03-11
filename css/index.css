@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-body{
-     font-size:1.5em;
+body {
+     font-size: 1.5em;
      font-family: sans-serif;
      color: white;
 }
 
-.calculatorContainer{
+.calculatorContainer {
     border: 1px solid white;
     background-color: #605E5E;
     border-radius: 8px;
@@ -16,84 +16,71 @@ body{
     margin : 0 auto;
 }
 
-.calculatorTitle{
-    color: white;
-    margin: 5px;
-    text-align: center;
-}
-
-.inputNumber{
-    height: 30px;
-    width: 100%;
+.inputNumber {
+    height: 90px;
+    width: 100.1%;
     text-align: right;
     border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     background-color: #E8E6E6;
-    font-size: 1em;
-    padding: 0 5px;
+    font-size: 70px;
+    padding: 30px 5px 0 5px;
 }
 
-.operators{
+.operators {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.leftContainer{
+.leftContainer {
     display: flex;
     flex-direction: column;
 }
-.rightContainer{
+
+.rightContainer {
     display: flex;
     flex-direction: column;
 }
-.upperOperators, .lowerOperators{
+
+.upperOperators, .lowerOperators {
     display: flex;
     flex-direction: row;
 }
-.upperOperators > span, .lowerOperators > span{
+
+.upperOperators > span, .lowerOperators > span {
     width: 50px;
 }
 
-.resetButton, .equalButton, #addButton, #substractButton, #multiplicationButton, #divisionButton{
-    padding: 10px;
+span {
+    padding-top: 16px;
     border: 1px solid white;
+    height: 79px;
+    width: 79px;
     text-align: center;
-    height: 50px;
+    align-items: center;
     border-radius: 8px;
     margin: 5px;
+    font-size: 40px;
+    display: inline-block;
 }
 
-.resetButton:hover, .equalButton:hover, #addButton:hover, #substractButton:hover, #multiplicationButton:hover, #divisionButton:hover{
+span:hover {
     background: #A1E1E4;
     cursor: pointer;
     color: #605E5E;
     border-color: #605E5E;
 }
 
-.results{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px;
+#zero {
+    width: 175px;
 }
 
-.display{
-    padding: 5px;
+.buttons .top {
+    margin-top: 5px;
 }
 
-.labelClass{
-    color: white;
+.buttons .bottom {
+    margin-bottom: 5px;
 }
-
-#logInformation{
-    padding: 0 10px;
-    background-color: #E8E6E6;
-    font-size: 0.5em;
-    border-radius: 8px;
-    border: 1px solid white;
-    width: 97%;
-    margin: 10px auto;
-    display: block;
-    height: 200px;
- }
-

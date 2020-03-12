@@ -55,6 +55,7 @@ span {
     display: inline-block;
     background-color: #404040;
     margin: 5px 0;
+    cursor: pointer;
 }
 
 span:hover {
